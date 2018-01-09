@@ -1,0 +1,16 @@
+{
+  "name": "cvette/php-pm-flow",
+  "license": "MIT",
+  "require": {
+    "php-pm/php-pm": "^1.0",
+    "ringcentral/psr7": "^1.2"
+  },
+  "require-dev": {
+    "neos/flow": "~4.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPPM\\": ""
+    }
+  }
+}
