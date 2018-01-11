@@ -1,10 +1,9 @@
 <?
-namespace Vette\PHPPM\Bootstraps;
+namespace PHPPM\Bootstraps;
 
 use Neos\Flow\Core\Booting\Scripts;
 use Neos\Flow\Core\Bootstrap as FlowBootstrap;
-use PHPPM\Bootstraps\ApplicationEnvironmentAwareInterface;
-use Vette\PHPPM\Flow\ExternalRequestHandler;
+use PHPPM\Flow\ExternalRequestHandler;
 
 class Flow implements ApplicationEnvironmentAwareInterface
 {

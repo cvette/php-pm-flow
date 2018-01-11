@@ -1,5 +1,5 @@
 <?php
-namespace Vette\PHPPM\Flow;
+namespace PHPPM\Flow;
 
 use Neos\Flow\Core\Bootstrap;
 use Neos\Flow\Http\Component\ComponentContext;

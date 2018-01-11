@@ -1,9 +1,8 @@
 <?php
-namespace Vette\PHPPM\Bridges;
+namespace PHPPM\Bridges;
 
 use Neos\Flow\Http\Cookie;
 use PHPPM\Bootstraps\ApplicationEnvironmentAwareInterface;
-use PHPPM\Bridges\BridgeInterface;
 use PHPPM\Utils;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -12,7 +11,7 @@ use RingCentral\Psr7\Response;
 use Neos\Flow\Http\Response as FlowResponse;
 use Neos\Flow\Http\Request as FlowRequest;
 use function RingCentral\Psr7\stream_for;
-use Vette\PHPPM\Flow\ExternalRequestHandler;
+use PHPPM\Flow\ExternalRequestHandler;
 
 class Flow implements BridgeInterface
 {
@@ -46,7 +45,7 @@ class Flow implements BridgeInterface
         if ($this->bootstrap instanceof ApplicationEnvironmentAwareInterface) {
             $this->bootstrap->initialize($appenv, $debug);
         }
-        if ($this->bootstrap instanceof \Vette\PHPPM\Bootstraps\Flow) {
+        if ($this->bootstrap instanceof \PHPPM\Bootstraps\Flow) {
             $this->application = $this->bootstrap->getApplication();
         }
     }
