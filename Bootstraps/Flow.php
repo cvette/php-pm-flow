@@ -1,4 +1,4 @@
-<?
+<?php
 namespace PHPPM\Bootstraps;
 
 use Neos\Flow\Core\Booting\Scripts;
