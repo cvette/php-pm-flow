@@ -150,7 +150,7 @@ class Flow implements BridgeInterface
         $class = FlowRequest::class;
 
         /** @var FlowRequest $flowRequest */
-        $flowRequest = new $class($query, $post, $attributes = [], $_COOKIE, $uploadedFiles, $_SERVER, $psrRequest->getBody());
+        $flowRequest = new $class($query, $post, $uploadedFiles, $_SERVER);
         $flowRequest->setMethod($method);
         return $flowRequest;
     }
